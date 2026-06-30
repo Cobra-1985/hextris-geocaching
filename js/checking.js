@@ -78,7 +78,11 @@ function consolidateBlocks(hex,side,index){
 		hex.comboMultiplier = 1;
 	}
 	var adder = deleting.length * deleting.length * hex.comboMultiplier;
-	hex.texts.push(new Text(hex.x,hex.y,"+ "+adder.toString(),"bold Q ",deletedBlocks[0].color,fadeUpAndOut));
-		hex.lastColorScored = deletedBlocks[0].color;
-	score += adder;
+hex.texts.push(new Text(hex.x, hex.y, "+ " + adder.toString(), "bold Q ", deletedBlocks[0].color, fadeUpAndOut));
+hex.lastColorScored = deletedBlocks[0].color;
+
+score += adder;
+
+if (score >= 10) {
+    alert("Bravo !");
 }
