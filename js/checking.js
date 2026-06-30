@@ -82,7 +82,9 @@ function consolidateBlocks(hex,side,index){
 		hex.lastColorScored = deletedBlocks[0].color;
 	score += adder;
 
-if (score >= 10) {
+if (!geocacheUnlocked && score >= 10) {
+    geocacheUnlocked = true;
+
     alert(
         "Bravo !\n\n" +
         "Tu as débloqué les coordonnées.\n\n" +
