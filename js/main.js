@@ -305,23 +305,6 @@ function animLoop() {
 		render();
 		return;
 
-	case 5:
-    render();
-
-    ctx.fillStyle = "rgba(0,0,0,0.85)";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-    ctx.fillStyle = "#FFFFFF";
-    ctx.font = "40px Arial";
-    ctx.textAlign = "center";
-
-    ctx.fillText("BRAVO !", canvas.width / 2, canvas.height / 2 - 40);
-    ctx.fillText("Tu as terminé le défi !", canvas.width / 2, canvas.height / 2 + 10);
-    ctx.fillText("N43° xx.xxx", canvas.width / 2, canvas.height / 2 + 70);
-    ctx.fillText("W001° xx.xxx", canvas.width / 2, canvas.height / 2 + 120);
-
-    return;
-			
 	default:
 		initialize();
 		setStartScreen();
