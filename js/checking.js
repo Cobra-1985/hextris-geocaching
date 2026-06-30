@@ -84,5 +84,5 @@ hex.lastColorScored = deletedBlocks[0].color;
 score += adder;
 
 if (score >= 10) {
-    alert("Bravo !");
+    gameState = 5;
 }
